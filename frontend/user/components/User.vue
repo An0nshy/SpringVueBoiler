@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ viewModel.name }}</h1>
-    <h2>Das ist der Name</h2>
+    <h2>USER SEITE</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,7 +35,7 @@
 import axios from "axios";
 
 export default{
-  name: 'HelloWorld',
+  name: 'User',
 
   data() {
     return {
@@ -78,5 +78,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.hello {
+  background-color: #2c3e50;
 }
 </style>

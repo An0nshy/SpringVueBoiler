@@ -1,26 +1,25 @@
 <template>
-  <div id="app">
+  <div id="user">
     <img alt="Vue logo" src="/logo.png">
-    <Dashboard />
+    <User/>
     <p>Trenner123</p>
     <HelloWorld msg="Profile Site.js App"/>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Dashboard from '../user/components/HelloWorld'
+// import HelloWorld from './components/User.vue'
+import User from './components/User'
 import HelloWorld from "../src/components/HelloWorld";
 export default {
   name: 'App',
   components: {
-    HelloWorld, Dashboard
+    HelloWorld, User
   }
 }
 </script>
-
 <style>
-#app {
+#user {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

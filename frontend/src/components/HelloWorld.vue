@@ -55,4 +55,7 @@ li {
 a {
   color: #42b983;
 }
+body {
+  background-color: #2c3e50;
+}
 </style>
