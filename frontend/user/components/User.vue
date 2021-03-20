@@ -1,4 +1,5 @@
-<template>
+<te/src/main/resources/templates/vue/
+mplate>
   <div class="hello">
     <h1>{{ viewModel.name }}</h1>
     <h2>USER SEITE</h2>
