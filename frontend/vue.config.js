@@ -2,25 +2,31 @@ const path = require("path");
 
 module.exports = {
   outputDir: path.resolve(__dirname, "../src/main/resources/public"),
-  assetsDir: "../public",
-  indexPath: "../templates/vue/index.html",// keep in root/src/
+  //assetsDir: path.resolve(__dirname, "../src/main/resources/public/img"),
+  //indexPath: "../templates/vue/index.html",// keep in root/src/
   pages: {
     user: {
-      entry: 'user/main.js',
+      entry: 'Modules/user/main.js',
       template: 'src/public/index.html',
       filename: '../templates/vue/user.html',
     },
-    src: {
-      entry: 'src/main.js',
+    dashboard: {
+      entry: 'dashboard/main.js',
       template: 'src/public/index.html',
-      filename: '../templates/vue/index.html',
+      filename: '../templates/vue/dashboard.html',
     },
   },
-  chainWebpack: (config) => {
-    config.module
-      .rule('images')
-      .use('url-loader')
-      .tap(options => Object.assign({path: '/img/'}, options, { name: '[name].[hash].[ext]' }));
+  chainWebpack: config => {
+    config.plugin('copy')
+      .tap(args => {
+        args[0].push({
+          from: path.resolve(__dirname, 'public/'),
+          to: path.resolve(__dirname, '../src/main/resources/public/img'),
+          toType: 'dir',
+          ignore: ['.DS_Store']
+        })
+        return args
+      })
   },
   css: {
     extract: {
