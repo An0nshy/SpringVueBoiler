@@ -1,4 +1,4 @@
-/src/main/resources/public/
+/src/main/resources/public/**
 /src/main/resources/templates/vue/
 /.idea
-/target
+/target/**
