@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack")
 
 module.exports = {
   outputDir: path.resolve(__dirname, "../src/main/resources/public"),
@@ -9,11 +10,6 @@ module.exports = {
       entry: 'Modules/user/main.js',
       template: 'src/public/index.html',
       filename: '../templates/vue/user.html',
-    },
-    dashboard: {
-      entry: 'dashboard/main.js',
-      template: 'src/public/index.html',
-      filename: '../templates/vue/dashboard.html',
     },
   },
   chainWebpack: config => {

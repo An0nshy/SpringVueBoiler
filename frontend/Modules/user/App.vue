@@ -10,11 +10,10 @@
 <script>
 // import HelloWorld from './components/User.vue'
 import User from './components/User'
-import HelloWorld from "../src/components/HelloWorld";
 export default {
   name: 'App',
   components: {
-    HelloWorld, User
+    User
   }
 }
 </script>

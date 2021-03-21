@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ viewModel.name }}</h1>
+    <h2>USER SEITE</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,8 +32,31 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
+import axios from "axios";
+
+export default{
+  name: 'User',
+
+  data() {
+    return {
+      viewModel: {
+        name: ''
+      }
+    }
+  },
+  created() {
+    axios.get("/api/test/fetch", {
+      params: {}
+    })
+        .then((response) => {
+          console.log(response.data)
+          this.viewModel = response.data
+        })
+        .catch((error) => {
+          console.log(error.response);
+          this.viewModel.message = "Something went wrong, please check your data and try again."
+        });
+  },
   props: {
     msg: String
   }
@@ -55,7 +79,8 @@ li {
 a {
   color: #42b983;
 }
-body {
+
+.hello {
   background-color: #2c3e50;
 }
 </style>
