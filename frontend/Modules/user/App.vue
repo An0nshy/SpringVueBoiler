@@ -1,9 +1,9 @@
 <template>
-  <div id="user">
+  <div id="app">
+    <h1>{{ name }}</h1>
     <img alt="Vue logo" src="/logo.png">
-    <User/>
-    <p class="bg-info">Trenner123</p>
-    <HelloWorld msg="Profile Site.js App"/>
+    <p class="bg-info">Hallo von der Vue App</p>
+    <User></User>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <style>
-#user {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

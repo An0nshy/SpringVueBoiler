@@ -11,7 +11,7 @@ public class ViewController {
     @GetMapping("/view")
     public ModelAndView view() {
         MessageResponse response = new MessageResponse("test");
-        return new ModelAndView("/vue/index")
+        return new ModelAndView("/vue/dashboard")
                 .addObject(response);
     }
 
