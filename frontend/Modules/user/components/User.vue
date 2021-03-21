@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="bg-danger">
     <h1>{{ viewModel.name }}</h1>
     <h2>USER SEITE</h2>
     <p>
@@ -78,9 +78,5 @@ li {
 }
 a {
   color: #42b983;
-}
-
-.hello {
-  background-color: #2c3e50;
 }
 </style>

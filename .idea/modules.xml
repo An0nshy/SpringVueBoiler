@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringVue.iml" filepath="$PROJECT_DIR$/SpringVue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-vuejs.iml" filepath="$PROJECT_DIR$/springboot-vuejs.iml" />
     </modules>
   </component>
 </project>

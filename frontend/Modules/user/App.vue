@@ -2,7 +2,7 @@
   <div id="user">
     <img alt="Vue logo" src="/logo.png">
     <User/>
-    <p>Trenner123</p>
+    <p class="bg-info">Trenner123</p>
     <HelloWorld msg="Profile Site.js App"/>
   </div>
 </template>
