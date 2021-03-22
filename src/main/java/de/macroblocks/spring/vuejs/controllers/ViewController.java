@@ -21,4 +21,9 @@ public class ViewController {
         return new ModelAndView("/vue/user")
                 .addObject("message", "test");
     }
+
+    @GetMapping("/login")
+    public ModelAndView login() {
+        return new ModelAndView("/vue/login");
+    }
 }

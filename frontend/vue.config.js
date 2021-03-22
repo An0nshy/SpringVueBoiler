@@ -4,13 +4,6 @@ module.exports = {
   outputDir: path.resolve(__dirname, "../src/main/resources/public/"),
   assetsDir: './',
   publicPath: '/',
-  pages: {
-    user: {
-      entry: 'Modules/user/main.js',
-      template: 'src/public/index.html',
-      filename: '../templates/vue/user.html',
-    },
-  },
   css: {
     extract: {
       filename: 'css/[name].css',
@@ -21,5 +14,19 @@ module.exports = {
       filename: 'js/[name].js',
       chunkFilename: 'js/[name].js',
     }
-  }
+  },
+  pages: {
+    login: {
+      entry: 'Modules/login/main.js',
+      template: 'public/index.html',
+      filename: '../templates/vue/login.html',
+      title: 'Login'
+    },
+    user: {
+      entry: 'Modules/user/main.js',
+      template: 'public/index.html',
+      filename: '../templates/vue/user.html',
+      title: 'user'
+    },
+  },
 }
