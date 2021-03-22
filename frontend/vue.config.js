@@ -1,8 +1,9 @@
 const path = require("path");
-const webpack = require("webpack")
 
 module.exports = {
-  outputDir: path.resolve(__dirname, "../src/main/resources/public"),
+  outputDir: path.resolve(__dirname, "../src/main/resources/public/"),
+  assetsDir: './',
+  publicPath: '/',
   pages: {
     user: {
       entry: 'Modules/user/main.js',
@@ -13,7 +14,6 @@ module.exports = {
   css: {
     extract: {
       filename: 'css/[name].css',
-      chunkFilename: 'css/[name].css',
     },
   },
   configureWebpack: {

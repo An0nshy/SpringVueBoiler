@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringVue" />
+        <module name="springboot-vuejs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springboot-vuejs" target="1.8" />
+      <module name="springboot-vuejs" target="15" />
       <module name="SpringVue" target="15" />
     </bytecodeTargetLevel>
   </component>

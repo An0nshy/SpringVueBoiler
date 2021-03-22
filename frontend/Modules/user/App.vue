@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>{{ name }}</h1>
-    <img alt="Vue logo" src="/logo.png">
+    <img alt="Vue logo" src="/img/logo.png">
     <p class="bg-info">Hallo von der Vue App</p>
     <User></User>
   </div>
